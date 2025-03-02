@@ -9,7 +9,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 98vh;
     border: 2px solid black;
     padding: 1rem;
 }
@@ -21,6 +21,7 @@
     text-align: center;
     margin-right: 1rem;
     margin-bottom: 1rem;
+    overflow: auto;
 }
 
 #cart{
@@ -41,7 +42,7 @@ form input,button{
 }
 
 #product-List{
-    height: 70%;
+    height: 63%;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -117,6 +118,7 @@ form input,button{
 
     #product{
         width: 80%;
+        margin-right: 0;
     }
 
     #cart{
