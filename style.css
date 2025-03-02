@@ -1,0 +1,158 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+#wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    border: 2px solid black;
+    padding: 1rem;
+}
+
+#product{
+    width: 50%;
+    height: 50%;
+    border: 10px solid gray;
+    text-align: center;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+}
+
+#cart{
+    width: 30%;
+    height: 50%;
+    border: 10px solid gray;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+form{
+    margin: 0.5rem;
+}
+
+form input,button{
+    padding: 0.5rem;
+    font-weight: bold;
+}
+
+#product-List{
+    height: 70%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    overflow: auto;
+}
+
+.parent{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+    background-color: gray;
+    font-size: 1.5rem;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    margin: 0.5rem 0;
+}
+
+.buttons{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    background-color: #3b93a9;
+    padding: 0 1rem;
+    border-radius: 20px;
+    cursor: pointer;
+    border: 1px solid black;
+}
+
+#cartData{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 70%;
+    overflow: auto;
+}
+
+.quantityPrice{
+    display: flex;
+    gap: 0.5rem;
+    justify-content: center;
+    align-items: center;
+}
+
+#cart{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    padding-top: 0;
+}
+
+.totalContainer{
+    display: flex;
+    justify-content: space-evenly;
+    width: 80%;
+    font-size: 2rem;
+    position: absolute;
+    bottom: 0;
+    margin-left: 0.5rem;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+}
+
+/* Resoponsive  */
+@media screen and (max-width: 1200px){
+    #wrapper{
+        flex-direction: column;
+    }
+
+    #product{
+        width: 80%;
+    }
+
+    #cart{
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 680px){
+    #wrapper{
+        flex-direction: column;
+    }
+
+    #product{
+        width: 100%;
+    }
+
+    #cart{
+        width: 100%;
+    }
+
+    form input,button{
+        margin: 0.3rem;
+    }
+
+    #product-List .parent{
+        font-size: 1rem;
+        width: 90%;
+    }
+
+    #cartData .parent{
+        font-size: 1rem;
+        /* width: 90%; */
+    }
+
+    /* .totalContainer{
+        font-size: 1.5rem;
+        width: 90%;
+    } */
+}
